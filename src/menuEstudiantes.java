@@ -4,7 +4,10 @@ public class menuEstudiantes {
     public static void main(String[] args) {
 
         EstudiantesNoGraduados() estu1 =new  EstudiantesNoGraduados(" ", " ", " ", " ", " ", " ");
+        EstudianteGraduado estu2= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
         EstudiantesNoGraduados() estu3 new EstudiantesNoGraduados(" ", " "," "," "," "," ");
+        EstudianteGraduado estu4= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
+        EstudianteGraduado estu5= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
 
 
 
