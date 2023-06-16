@@ -10,7 +10,7 @@ public class EstudianteGraduado extends Estudiantes{
 
     //Constructor
     //se inidica los atributos de la superclase y los atributos de esta clase Estudantesgraduados
-    public EstudianteGraduado(double promedio_graduacion, String carrea, String periodo_graduacion,String nombre,String apellido,String institucion,String cedula) {
+    public EstudianteGraduado(String nombre,String apellido,String institucion,String cedula, double promedio_graduacion, String carrea, String periodo_graduacion) {
         super(nombre,apellido,institucion,cedula);
         this.promedio_graduacion = promedio_graduacion;
         this.carrea = carrea;

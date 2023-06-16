@@ -3,14 +3,11 @@ import java.util.Scanner;
 public class menuEstudiantes {
     public static void main(String[] args) {
         //se crea las instancias de los estudiantes
-        EstudiantesNoGraduados() estu1 =new  EstudiantesNoGraduados(" ", " ", " ", " ", " ", " ");
-        EstudianteGraduado estu2= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
-        EstudiantesNoGraduados() estu3 new EstudiantesNoGraduados(" ", " "," "," "," "," ");
-        EstudianteGraduado estu4= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
-        EstudianteGraduado estu5= new EstudianteGraduado(0, " ", " ", " ", " ", " "," " );
-
-
-
+        EstudiantesNoGraduados estu1 =new  EstudiantesNoGraduados(" ", " ", " ", " ", " ", " ");
+        EstudianteGraduado estu2= new EstudianteGraduado("", " ", " ", " ", 0, " "," " );
+        EstudiantesNoGraduados estu3 = new EstudiantesNoGraduados(" ", " "," "," "," "," ");
+        EstudianteGraduado estu4= new EstudianteGraduado("", " ", " ", " ", 0, " "," " );
+        EstudianteGraduado estu5= new EstudianteGraduado("", " ", " ", " ", 0, " "," " );
 
 
         //Variable en donde se va a indicar el valor de la opcion
@@ -43,4 +40,6 @@ public class menuEstudiantes {
             //se indica que si la opcion es igual a 0 el menu se terminará
         }while(op != 0);
     }
+
+
 }
