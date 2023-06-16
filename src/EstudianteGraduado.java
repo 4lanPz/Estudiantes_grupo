@@ -24,4 +24,14 @@ public class EstudianteGraduado extends Estudiantes{
     public void setCarrea(String carrea) { this.carrea = carrea; }
     public String getPeriodo_graduacion() { return periodo_graduacion; }
     public void setPeriodo_graduacion(String periodo_graduacion) { this.periodo_graduacion = periodo_graduacion; }
+
+    public void mostrarDetallegraduado() {
+        System.out.println("\nDetalles del graduado:");
+        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Apellido: " +this.apellido);
+        System.out.println("Institucion: " + this.institucion);
+        System.out.println("Cedula: " + this.cedula);
+        System.out.println("Periodo graduacion: " + this.periodo_graduacion);
+        System.out.println("Promedio graduacion: " + this.promedio_graduacion);
+    }
 }
