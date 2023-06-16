@@ -27,12 +27,26 @@ public class menuEstudiantes {
             switch (op){
                 //si se ingresa la opcion 1 entrará a
                 case 1:{
-                    System.out.println("");
+                    EstudianteGraduado Est1 = new EstudianteGraduado();
+                    Est1.setNombre("Jared");
+                    Est1.setApellido("Valenzuela");
+                    Est1.setInstitucion("EPN");
+                    Est1.setCedula("1719446820");
+                    Est1.setPeriodo_graduacion("");
+                    Est1.setPromedio_graduacion(0.00);
+
                     break;
                 }
                 //si se ingresa la opcion 2 entrará a
                 case 2:{
-                    System.out.println("2");
+                    EstudiantesNoGraduados Est = new EstudiantesNoGraduados();
+                    Est.setNombre("Jared");
+                    Est.setApellido("");
+                    Est.setInstitucion("");
+                    Est.setCedula("");
+                    Est.setPeriodo("");
+                    Est.setNueva_fecha_prueba("");
+
                     break;
                 }
                 default:
