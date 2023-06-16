@@ -16,7 +16,7 @@ public class menuEstudiantes {
             switch (op){
                 //si se ingresa la opcion 1 entrará a
                 case 1:{
-                    System.out.println("1");
+                    System.out.println("1. ");
                     break;
                 }
                 //si se ingresa la opcion 2 entrará a
