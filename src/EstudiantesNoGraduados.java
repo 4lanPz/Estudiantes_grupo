@@ -1,25 +1,10 @@
 public class EstudiantesNoGraduados extends Estudiantes {
 
-    //ATRIBUTOS
+    //Atriburos de la clase Estudiantes no Graduados
     private String periodo;
     private String nueva_fecha_prueba;
-
-    public String getPeriodo() {
-        return periodo;
-    }
-
-    public void setPeriodo(String periodo) {
-        this.periodo = periodo;
-    }
-
-    public String getNueva_fecha_prueba() {
-        return nueva_fecha_prueba;
-    }
-
-    public void setNueva_fecha_prueba(String nueva_fecha_prueba) {
-        this.nueva_fecha_prueba = nueva_fecha_prueba;
-    }
-
+    //Constructor
+    //se inidica los atributos de la superclase y los atributos de esta clase Estudantesno graduados
     public EstudiantesNoGraduados(String nombre,
                                   String apellido,
                                   String institucion,
@@ -30,6 +15,18 @@ public class EstudiantesNoGraduados extends Estudiantes {
         this.periodo=periodo;
         this.nueva_fecha_prueba=nueva_fecha_prueba;
     }
-
+    //getters y setter de la clase EstudiantesNoGraduados
+    public String getPeriodo() {
+        return periodo;
+    }
+    public void setPeriodo(String periodo) {
+        this.periodo = periodo;
+    }
+    public void setNueva_fecha_prueba(String nueva_fecha_prueba) {
+        this.nueva_fecha_prueba = nueva_fecha_prueba;
+    }
+    public String getNueva_fecha_prueba() {
+        return nueva_fecha_prueba;
+    }
 
 }
