@@ -5,10 +5,10 @@ public class Estudiantes {
      String cedula;
 
     public Estudiantes(String nombre, String apellido, String institucion, String cedula) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.institucion = institucion;
-        this.cedula = cedula;
+        this.nombre = this.nombre;
+        this.apellido = this.apellido;
+        this.institucion = this.institucion;
+        this.cedula = this.cedula;
     }
 
     public String getNombre() {
