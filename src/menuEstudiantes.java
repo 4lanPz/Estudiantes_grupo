@@ -9,14 +9,16 @@ public class menuEstudiantes {
         do {
             //se imprime los textos que indican el inicio del menu
             System.out.println("\n\t *** MENU PRINCIPAL *** \n");
-            System.out.println("");
+            System.out.println("1. Ingresar estudiantes");
+            System.out.println("2. Mostrar estudiantes");
+            System.out.println("3. SALIR");
             System.out.println("Opcion:");
             //se va a ingrersar la opcion que procederá a indicar si el estudiante es graduado o no
             op = sc.nextInt();
             switch (op){
                 //si se ingresa la opcion 1 entrará a
                 case 1:{
-                    System.out.println("1. ");
+                    System.out.println("");
                     break;
                 }
                 //si se ingresa la opcion 2 entrará a
