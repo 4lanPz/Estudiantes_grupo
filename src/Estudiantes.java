@@ -1,16 +1,17 @@
 public class Estudiantes {
+    //atributos de la superclase Estudiantes
      String nombre;
      String apellido;
      String institucion;
      String cedula;
-
+//Constructor de la superclase estudiantes indicando los atributos principales que van a usar el resto de las clases
     public Estudiantes(String nombre, String apellido, String institucion, String cedula) {
         this.nombre = this.nombre;
         this.apellido = this.apellido;
         this.institucion = this.institucion;
         this.cedula = this.cedula;
     }
-
+    //getters y setter de la superclase Estudiantes
     public String getNombre() {
         return nombre;
     }
