@@ -2,6 +2,14 @@ import java.util.Scanner;
 //menu principal
 public class menuEstudiantes {
     public static void main(String[] args) {
+
+        EstudiantesNoGraduados() estu1 =new  EstudiantesNoGraduados(" ", " ", " ", " ", " ", " ");
+        EstudiantesNoGraduados() estu3 new EstudiantesNoGraduados(" ", " "," "," "," "," ");
+
+
+
+
+
         //Variable en donde se va a indicar el valor de la opcion
         int op;
         Scanner sc = new Scanner(System.in);
