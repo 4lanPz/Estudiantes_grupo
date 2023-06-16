@@ -11,7 +11,7 @@ public class menuEstudiantes {
             op = sc.nextInt();
             switch (op){
                 case 1:{
-                    System.out.println("1");
+                    System.out.println("1. ");
                     break;
                 }
                 case 2:{
