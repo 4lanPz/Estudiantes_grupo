@@ -5,6 +5,8 @@ public class Estudiantes {
      String institucion;
      String cedula;
 
+     public Estudiantes(){};
+
     //Constructor de la superclase estudiantes indicando los atributos principales que van a usar el resto de las clases
     public Estudiantes(String nombre, String apellido, String institucion, String cedula) {
         this.nombre = this.nombre;

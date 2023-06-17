@@ -3,6 +3,9 @@ public class EstudiantesNoGraduados extends Estudiantes {
     private String periodo;
     private String nueva_fecha_prueba;
 
+    public EstudiantesNoGraduados(){
+        super();
+    }
     //Constructor
     //se inidica los atributos de la superclase y los atributos de esta clase Estudantesnograduados
     public EstudiantesNoGraduados(String nombre,
