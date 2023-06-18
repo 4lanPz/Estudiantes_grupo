@@ -1,22 +1,21 @@
-public class EstudiantesNoGraduados extends Estudiantes {
+public class EstudianteNoGraduado extends Estudiantes {
     //Atriburos de la clase Estudiantes no Graduados
     private String periodo;
     private String nueva_fecha_prueba;
 
-    public EstudiantesNoGraduados(){
-        super();
-    }
     //Constructor
     //se inidica los atributos de la superclase y los atributos de esta clase Estudantesnograduados
-    public EstudiantesNoGraduados(String nombre,
-                                  String apellido,
-                                  String institucion,
-                                  String cedula,
-                                  String periodo,
-                                  String nueva_fecha_prueba) {
-        super(nombre, apellido, institucion, cedula);
-        this.periodo=periodo;
-        this.nueva_fecha_prueba=nueva_fecha_prueba;
+
+
+    public EstudianteNoGraduado(String nombre,
+                                String apellido,
+                                String institucion,
+                                String cedula,
+                                String periodo,
+                                String nueva_fecha_prueba) {
+        super(nombre,apellido,institucion,cedula);
+        this.periodo = periodo;
+        this.nueva_fecha_prueba = nueva_fecha_prueba;
     }
 
     //getters y setter de esta clase clase EstudiantesNoGraduados

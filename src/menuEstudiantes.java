@@ -1,11 +1,21 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 //menu principal
 public class menuEstudiantes {
     public static void main(String[] args) {
 
-        EstudiantesNoGraduados[] noGraduado = new EstudiantesNoGraduados[2];
-        EstudianteGraduado[] graduado = new EstudianteGraduado[3];
+        //Arreglo de objetos de las clases estudiantes graduados y no graduados
+        ArrayList<EstudianteGraduado>estudiantesGraduados=new ArrayList<EstudianteGraduado>();
+        ArrayList<EstudianteNoGraduado> estudiantesNoGraduados =new ArrayList<EstudianteNoGraduado>();
+        //Instancias. Sus atributos serán inicializados luego
+        estudiantesNoGraduados.add(new EstudianteNoGraduado("","","","","",""));
+        estudiantesNoGraduados.add(new EstudianteNoGraduado("","","","","",""));
+        estudiantesNoGraduados.add(new EstudianteNoGraduado("","","","","",""));
 
+        estudiantesGraduados.add(new EstudianteGraduado("","","","",0,"",""));
+        estudiantesGraduados.add(new EstudianteGraduado("","","","",0,"",""));
+
+        //Variables donde se guardaran los valores ingresados por teclado
         String nombre, apellido, institucion, cedula, periodo_actual, fecha_prueba, carrera, periodo_graduacion;
         double promedio;
 
@@ -23,90 +33,96 @@ public class menuEstudiantes {
             System.out.print("Opcion:");
             //se va a ingrersar la opcion que procederá a indicar si el estudiante es graduado o no
             op = sc.nextInt();
+            sc.nextLine();
             switch (op){
                 //si se ingresa la opcion 1 entrará a
-                case 1:{
+                case 1:
+                    int j=1, k=1;
                     a = 1;
                     System.out.println("\n\t\tEstudiantes no graduados");
-                    for (int i = 0; i < noGraduado.length; i++){
-                        noGraduado[i] = new EstudiantesNoGraduados();
-                        System.out.println("\nEstudiante " + (i+1) + " \n");
+                    for (EstudianteNoGraduado estudianteNoGraduado : estudiantesNoGraduados){
+                        System.out.println("\nEstudiante " + (j) + " \n");
                         System.out.print("Nombre: ");
-                        nombre = sc.next();
+                        nombre = sc.nextLine();
+                        estudianteNoGraduado.setNombre(nombre);
                         System.out.print("Apellido: ");
-                        apellido = sc.next();
+                        apellido = sc.nextLine();
+                        estudianteNoGraduado.setApellido(apellido);
                         System.out.print("Institucion: ");
-                        institucion = sc.next();
+                        institucion = sc.nextLine();
+                        estudianteNoGraduado.setInstitucion(institucion);
                         System.out.print("Cedula: ");
-                        cedula = sc.next();
+                        cedula = sc.nextLine();
+                        estudianteNoGraduado.setCedula(cedula);
                         System.out.print("Periodo: ");
-                        periodo_actual = sc.next();
+                        periodo_actual = sc.nextLine();
+                        estudianteNoGraduado.setPeriodo(periodo_actual);
                         System.out.print("Fecha de prueba: ");
-                        fecha_prueba = sc.next();
-                        noGraduado[i].setNombre(nombre);
-                        noGraduado[i].setApellido(apellido);
-                        noGraduado[i].setInstitucion(institucion);
-                        noGraduado[i].setCedula(cedula);
-                        noGraduado[i].setPeriodo(periodo_actual);
-                        noGraduado[i].setNueva_fecha_prueba(fecha_prueba);
+                        fecha_prueba = sc.nextLine();
+                        estudianteNoGraduado.setNueva_fecha_prueba(fecha_prueba);
+                        j++;
                     }
                     System.out.println("\n\t\tEstudiantes graduados");
-                    for (int i = 0; i < graduado.length; i++){
-                        graduado[i] = new EstudianteGraduado();
-                        System.out.println("\nEstudiante " + (i+1) + " \n");
+                    for (EstudianteGraduado estudianteGraduado : estudiantesGraduados){
+                        System.out.println("\nEstudiante " + (k) + " \n");
                         System.out.print("Nombre: ");
-                        nombre = sc.next();
+                        nombre = sc.nextLine();
+                        estudianteGraduado.setNombre(nombre);
                         System.out.print("Apellido: ");
-                        apellido = sc.next();
+                        apellido = sc.nextLine();
+                        estudianteGraduado.setApellido(apellido);
                         System.out.print("Institucion: ");
-                        institucion = sc.next();
+                        institucion = sc.nextLine();
+                        estudianteGraduado.setInstitucion(institucion);
                         System.out.print("Cedula: ");
-                        cedula = sc.next();
+                        cedula = sc.nextLine();
+                        estudianteGraduado.setCedula(cedula);
                         System.out.print("Promedio: ");
                         promedio = sc.nextDouble();
+                        estudianteGraduado.setPromedio_graduacion(promedio);
                         System.out.print("Carrera: ");
-                        carrera = sc.next();
+                        sc.nextLine();
+                        carrera = sc.nextLine();
+                        estudianteGraduado.setCarrea(carrera);
                         System.out.print("Pediodo de Graduación: ");
-                        periodo_graduacion = sc.next();
-                        graduado[i].setNombre(nombre);
-                        graduado[i].setApellido(apellido);
-                        graduado[i].setInstitucion(institucion);
-                        graduado[i].setCedula(cedula);
-                        graduado[i].setPromedio_graduacion(promedio);
-                        graduado[i].setCarrea(carrera);
-                        graduado[i].setPeriodo_graduacion(periodo_graduacion);
+                        periodo_graduacion = sc.nextLine();
+                        estudianteGraduado.setPeriodo_graduacion(periodo_graduacion);
+                        k++;
                     }
                     break;
-                }
+
                 //si se ingresa la opcion 2 entrará a
-                case 2:{
+                case 2:
                     if (a == 1){
                         System.out.println("\n\t\tEstudiantes no graduados");
-                        for (int i = 0; i < (noGraduado.length); i++){
-                            System.out.println("\nEstudiante " + (i+1) + " \n");
-                            System.out.println("Nombre: " + noGraduado[i].getNombre());
-                            System.out.println("Apellido: " + noGraduado[i].getApellido());
-                            System.out.println("Institucion: " + noGraduado[i].getInstitucion());
-                            System.out.println("Cedula: " + noGraduado[i].getCedula());
-                            System.out.println("Periodo: " + noGraduado[i].getPeriodo());
-                            System.out.println("Fecha de prueba: " + noGraduado[i].getNueva_fecha_prueba());
+                        for (int i=0; i<estudiantesNoGraduados.size(); i++){
+                            System.out.println("\nEstudiante " +(i+1)+" \n");
+                            System.out.println("Nombre: " + estudiantesNoGraduados.get(i).getNombre());
+                            System.out.println("Apellido: " + estudiantesNoGraduados.get(i).getApellido());
+                            System.out.println("Institucion: " + estudiantesNoGraduados.get(i).getInstitucion());
+                            System.out.println("Cedula: " + estudiantesNoGraduados.get(i).getCedula());
+                            System.out.println("Periodo: " + estudiantesNoGraduados.get(i).getPeriodo());
+                            System.out.println("Fecha de prueba: " + estudiantesNoGraduados.get(i).getNueva_fecha_prueba());
+
                         }
+                        int h=1;
                         System.out.println("\n\t\tEstudiantes graduados");
-                        for (int i = 0; i < (noGraduado.length); i++){
-                            System.out.println("\nEstudiante " + (i+1) + " \n");
-                            System.out.println("Nombre: " + graduado[i].getNombre());
-                            System.out.println("Apellido: " + graduado[i].getApellido());
-                            System.out.println("Institucion: " + graduado[i].getInstitucion());
-                            System.out.println("Cedula: " + graduado[i].getCedula());
-                            System.out.println("Promedio: " + graduado[i].getPromedio_graduacion());
-                            System.out.println("Carrera: " + graduado[i].getCarrea());
-                            System.out.println("Pediodo de Graduación: " + graduado[i].getPeriodo_graduacion());
+                        for (EstudianteGraduado estudianteG : estudiantesGraduados){
+                            System.out.println("\nEstudiante "+h+" \n");
+                            System.out.println("Nombre: " + estudianteG.getNombre());
+                            System.out.println("Apellido: " + estudianteG.getApellido());
+                            System.out.println("Institucion: " + estudianteG.getInstitucion());
+                            System.out.println("Cedula: " + estudianteG.getCedula());
+                            System.out.println("Promedio: " + estudianteG.getPromedio_graduacion());
+                            System.out.println("Carrera: " + estudianteG.getCarrea());
+                            System.out.println("Pediodo de Graduación: " + estudianteG.getPeriodo_graduacion());
+                            h++;
                         }
                     }else {
                         System.out.println("\nNo se encuentran registros\n");
                     }
                     break;
-                }
+
                 case 0:{
                     System.out.println("\n\t\t Gracias por usar");
                     break;
